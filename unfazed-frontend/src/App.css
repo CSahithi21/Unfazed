@@ -1,0 +1,329 @@
+
+/* UNFAZED - Modern Wellness Design */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8f9f5;
+  color: #263b32;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 12px 20px;
+  background: #557c65;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #3f624e;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #dce4dc;
+  border-radius: 9px;
+  background: white;
+  color: #263b32;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #739b80;
+  box-shadow: 0 0 0 3px #739b8020;
+}
+
+p {
+  line-height: 1.7;
+  color: #68776d;
+}
+
+/* HOME PAGE */
+
+.home-page {
+  min-height: 100vh;
+  background: #f8f9f5;
+}
+
+.home-page header,
+.dashboard-page header {
+  width: 100%;
+  min-height: 85px;
+  padding: 18px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: white;
+  border-bottom: 1px solid #e8eee7;
+}
+
+.home-page header h1,
+.dashboard-page header h1 {
+  margin: 0;
+  color: #365b46;
+  font-size: 29px;
+  letter-spacing: 1px;
+}
+
+.home-page nav {
+  display: flex;
+  gap: 12px;
+}
+
+.home-page nav button:first-child {
+  background: transparent;
+  color: #45664f;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 110px 25px;
+  text-align: center;
+}
+
+.hero h2 {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #294b38;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.2;
+}
+
+.hero p {
+  max-width: 620px;
+  margin: 25px auto;
+  font-size: 17px;
+}
+
+.hero button {
+  margin: 8px;
+  padding: 15px 25px;
+}
+
+/* DASHBOARD */
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f5f7f2;
+}
+
+.dashboard-page main {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 45px 25px;
+}
+
+.dashboard-page main > h2 {
+  color: #294b38;
+  font-size: 29px;
+}
+
+.dashboard-page header button {
+  background: #557c65;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.feature-card {
+  min-width: 0;
+  padding: 28px;
+  background: white;
+  border: 1px solid #e7ece5;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px #263b3208;
+  overflow-wrap: anywhere;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #355c43;
+  font-size: 20px;
+}
+
+.feature-card p {
+  font-size: 14px;
+}
+
+.feature-card button {
+  margin: 7px 5px 7px 0;
+}
+
+.feature-card form {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #e8eee7;
+}
+
+/* APPOINTMENT FORM */
+
+.dashboard-page main > form {
+  display: grid;
+  gap: 14px;
+  max-width: 550px;
+  margin: 25px 0 45px;
+  padding: 28px;
+  background: white;
+  border: 1px solid #e7ece5;
+  border-radius: 15px;
+}
+
+.dashboard-page label {
+  color: #45634f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* LOGIN AND REGISTER */
+
+.auth-page {
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: #f5f7f2;
+}
+
+.back-btn {
+  background: transparent;
+  color: #426b57;
+}
+
+.back-btn:hover {
+  background: #e8eee7;
+  color: #294b38;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 450px;
+  margin: 55px auto;
+  padding: 38px;
+  background: white;
+  border: 1px solid #e7ece5;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px #263b320c;
+}
+
+.auth-container h1 {
+  color: #365b46;
+  text-align: center;
+  font-size: 34px;
+}
+
+.auth-container h2 {
+  color: #294b38;
+  text-align: center;
+}
+
+.auth-container > p {
+  text-align: center;
+}
+
+.auth-container form {
+  display: grid;
+  gap: 16px;
+  margin: 25px 0;
+}
+
+.auth-container form button {
+  width: 100%;
+}
+
+.auth-container p button {
+  padding: 5px 8px;
+  background: transparent;
+  color: #426b57;
+}
+
+/* MESSAGES */
+
+[role="alert"],
+[role="status"] {
+  padding: 12px 15px;
+  border-radius: 9px;
+  background: #edf4ed;
+  color: #355c43;
+  overflow-wrap: anywhere;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 750px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page header,
+  .dashboard-page header {
+    padding: 18px 5%;
+  }
+
+  .dashboard-page main {
+    padding: 28px 18px;
+  }
+
+  .hero {
+    padding: 75px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    padding: 25px 20px;
+    margin: 35px auto;
+  }
+
+  .home-page header,
+  .dashboard-page header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-page nav {
+    width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .dashboard-page main > form {
+    padding: 20px;
+  }
+}
